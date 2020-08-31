@@ -1,0 +1,42 @@
+@media(max-width:450px)
+{
+    .back2{
+        width: 75%;
+    }
+}
+@media(min-width:600px)
+{
+    .back2{
+        width: 60%;
+    }
+}
+@media(min-width:600px) and (max-width:450px)
+{
+    .back2{
+        width: 70%;
+    }
+}
+ .strikeOut{
+     text-decoration: line-through;
+ }
+ body{
+
+    background-image: url('./todolist.jpg');
+    background-size: cover;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .parent{
+    background-color:beige;
+    height: 100%;
+ }
+ #todo{
+     width:40%;
+     height:60%;
+ }
+#tasklist{
+    
+}
