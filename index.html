@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="back2">
+    <div class="parent">
+    <form>
+        <input type="text" placeholder="Enter your task here..." id="todo" >
+         <button type="button" id="btn">Submit</button>
+         <ul id="tasklist"></ul>
+    </form>
+</div>
+</body>
+<script>
+    var list=document.getElementById('tasklist');
+    var form=document.getElementsByTagName('button')[0];
+    var todoInput=document.getElementById('todo');
+    form.addEventListener('click',function(event){
+     event.preventDefault();  
+     addToList(todoInput.value);
+     todoInput.value="";
+    })
+    function addToList(task){
+        if(task ==='')
+        {
+            alert('input required');
+            return;
+        }
+      list.setAttribute()
+      var li=document.createElement('li');
+      li.textContent=task;
+      list.appendChild(li);
+    }
+    list.addEventListener('click',function(e){
+      e.target.classList.toggle('strikeOut');
+    })
+</script>
+</html>
